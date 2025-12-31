@@ -481,6 +481,14 @@ footer {
     transform: translateY(-10px);
 }
 
+.devotional-card:hover,
+.devotional-card:focus {
+    transform: translateY(-10px);
+    outline: none;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+    border: 2px solid #FFD700;
+}
+
 .program-icon {
     font-size: 2.5rem;
     color: var(--primary);
