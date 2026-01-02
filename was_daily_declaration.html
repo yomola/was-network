@@ -4,17 +4,302 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAS Network Daily Declaration</title>
-    <link rel="stylesheet" href="devotional.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* WAS Network Daily Declaration - Complete Beautiful Design */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Merriweather', 'Georgia', serif;
+            color: #2c3e50;
+            line-height: 1.8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .was-container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .was-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, #8a2be2, #4a90e2, #20b2aa);
+        }
+        
+        .was-title {
+            text-align: center;
+            color: #5c4b8a;
+            font-size: 3.2rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 25px;
+        }
+        
+        .was-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 4px;
+            background: linear-gradient(90deg, #8a2be2, #4a90e2);
+            border-radius: 2px;
+        }
+        
+        .was-declaration-text {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            text-align: left;
+            padding: 25px;
+            background: linear-gradient(145deg, #f9f9ff 0%, #ffffff 100%);
+            border-radius: 16px;
+            border-left: 4px solid #8a2be2;
+            box-shadow: 0 4px 12px rgba(138, 43, 226, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .was-declaration-text:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.12);
+        }
+        
+        .was-scripture {
+            color: #8a2be2;
+            font-style: italic;
+            font-weight: 600;
+            background: rgba(138, 43, 226, 0.08);
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin: 0 3px;
+            border-left: 2px solid #8a2be2;
+            display: inline-block;
+        }
+        
+        .was-highlight {
+            color: #4a90e2;
+            font-weight: 700;
+            background: linear-gradient(120deg, rgba(74, 144, 226, 0.1) 0%, rgba(74, 144, 226, 0.05) 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .was-prayer-ending {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.4rem;
+            color: #2c3e50;
+            padding: 35px;
+            margin-top: 40px;
+            background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+            border-radius: 20px;
+            position: relative;
+            border: 2px dashed rgba(138, 43, 226, 0.3);
+        }
+        
+        .was-prayer-ending::before {
+            content: "❝";
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 4rem;
+            color: #8a2be2;
+            opacity: 0.3;
+        }
+        
+        .was-signature {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 25px;
+            border-top: 2px solid #eee;
+            color: #666;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .was-flourish {
+            position: absolute;
+            opacity: 0.03;
+            font-size: 15rem;
+            color: #8a2be2;
+            z-index: 0;
+        }
+        
+        .was-flourish.top-left {
+            top: -50px;
+            left: -50px;
+            transform: rotate(-15deg);
+        }
+        
+        .was-flourish.bottom-right {
+            bottom: -50px;
+            right: -50px;
+            transform: rotate(15deg);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .was-container {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+            
+            .was-title {
+                font-size: 2.2rem;
+                padding-bottom: 20px;
+            }
+            
+            .was-declaration-text {
+                font-size: 1.1rem;
+                padding: 20px;
+            }
+            
+            .was-prayer-ending {
+                font-size: 1.2rem;
+                padding: 25px 20px;
+            }
+            
+            .was-flourish {
+                font-size: 10rem;
+            }
+            
+            .was-flourish.top-left {
+                top: -30px;
+                left: -30px;
+            }
+            
+            .was-flourish.bottom-right {
+                bottom: -30px;
+                right: -30px;
+            }
+        }
+        
+        /* Animation for entrance */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .was-container {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .was-declaration-text {
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+        
+        .was-declaration-text:nth-of-type(1) { animation-delay: 0.1s; }
+        .was-declaration-text:nth-of-type(2) { animation-delay: 0.2s; }
+        .was-declaration-text:nth-of-type(3) { animation-delay: 0.3s; }
+        .was-declaration-text:nth-of-type(4) { animation-delay: 0.4s; }
+        .was-declaration-text:nth-of-type(5) { animation-delay: 0.5s; }
+        .was-prayer-ending { animation-delay: 0.6s; }
+    </style>
 </head>
-<body class="was_daily_declaration">
-    <div class="was_daily_declaration container">
-        <h1 class="was_daily_declaration">WAS Network Daily Declaration</h1>
-        <p class="was_daily_declaration">Today, I declare that I am a woman created with divine intention and heavenly purpose. I arise and shine, for God's glory is upon me <span class="was_daily_declaration scripture">(Isaiah 60:1)</span>. I step boldly into the calling God has placed on my life, trusting His good and hope-filled plans <span class="was_daily_declaration scripture">(Jeremiah 29:11)</span>. I am equipped and empowered by His Spirit, who counsels, strengthens, and leads me into all truth <span class="was_daily_declaration scripture">(John 16:13)</span>. I walk in wisdom and clarity, reflecting His brilliance <span class="was_daily_declaration scripture">(Psalm 37:23)</span>.</p>
-        <p class="was_daily_declaration">Today, I embrace healing in my spirit, soul, and mind. The Lord restores my soul <span class="was_daily_declaration scripture">(Psalm 23:3)</span> and binds every broken place <span class="was_daily_declaration scripture">(Psalm 147:3)</span>. I am whole and strengthened by His love.</p>
-        <p class="was_daily_declaration">I declare that I am a vessel of purpose in my home, community, and every place God assigns to me. I am intentionally placed by Him, carrying His presence, wisdom, and grace <span class="was_daily_declaration scripture">(2 Corinthians 2:14)</span>. I am a messenger of His love and an instrument of His righteousness <span class="was_daily_declaration scripture">(Romans 6:13)</span>. In my home, my words carry life <span class="was_daily_declaration scripture">(Proverbs 18:21)</span>, my hands bring strength <span class="was_daily_declaration scripture">(Proverbs 31:17)</span>, and my presence brings peace. I steward my home as holy ground.</p>
-        <p class="was_daily_declaration">In my community, I shine as a light <span class="was_daily_declaration scripture">(Matthew 5:14–16)</span>. I bring solutions, compassion, and hope. God uses me to uplift and transform lives. In every environment, workplace, ministry, leadership, or service; I represent God's Kingdom with excellence. I walk in wisdom <span class="was_daily_declaration scripture">(James 1:5)</span>, favour <span class="was_daily_declaration scripture">(Psalm 90:17)</span>, and the good works prepared for me <span class="was_daily_declaration scripture">(Ephesians 2:10)</span>.</p>
-        <p class="was_daily_declaration">Wherever God places me, I bring heaven's atmosphere. I am fruitful, effective, and aligned with God's timing. I step forward in authority and grace, chosen to bear lasting fruit <span class="was_daily_declaration scripture">(John 15:16)</span>. I commit to growth through teaching, mentorship, and worship. God renews my mind and shapes my life <span class="was_daily_declaration scripture">(Romans 12:2)</span>, equipping me for every good work <span class="was_daily_declaration scripture">(2 Timothy 3:17)</span>. I am strengthened by community. As iron sharpens iron, I am sharpened by my sisters in Christ <span class="was_daily_declaration scripture">(Proverbs 27:17)</span>.</p>
-        <p class="was_daily_declaration">I am rising into God's call for my life. Confident, courageous, and full of faith, I shine with His purpose and glory. Today, I arise; empowered, healed, and prepared to fulfil my divine assignment, in Jesus' name, Amen.</p>
+<body>
+    <div class="was-container">
+        <div class="was-flourish top-left">✝</div>
+        <div class="was-flourish bottom-right">✝</div>
+        
+        <h1 class="was-title">WAS Network Daily Declaration</h1>
+        
+        <div class="was-declaration-text">
+            Today, I declare that I am a woman created with <span class="was-highlight">divine intention</span> and <span class="was-highlight">heavenly purpose</span>. I arise and shine, for God's glory is upon me <span class="was-scripture">(Isaiah 60:1)</span>. I step boldly into the calling God has placed on my life, trusting His good and hope-filled plans <span class="was-scripture">(Jeremiah 29:11)</span>. I am equipped and empowered by His Spirit, who counsels, strengthens, and leads me into all truth <span class="was-scripture">(John 16:13)</span>. I walk in wisdom and clarity, reflecting His brilliance <span class="was-scripture">(Psalm 37:23)</span>.
+        </div>
+        
+        <div class="was-declaration-text">
+            Today, I embrace <span class="was-highlight">healing</span> in my spirit, soul, and mind. The Lord restores my soul <span class="was-scripture">(Psalm 23:3)</span> and binds every broken place <span class="was-scripture">(Psalm 147:3)</span>. I am whole and strengthened by His love.
+        </div>
+        
+        <div class="was-declaration-text">
+            I declare that I am a <span class="was-highlight">vessel of purpose</span> in my home, community, and every place God assigns to me. I am intentionally placed by Him, carrying His presence, wisdom, and grace <span class="was-scripture">(2 Corinthians 2:14)</span>. I am a messenger of His love and an instrument of His righteousness <span class="was-scripture">(Romans 6:13)</span>. In my home, my words carry life <span class="was-scripture">(Proverbs 18:21)</span>, my hands bring strength <span class="was-scripture">(Proverbs 31:17)</span>, and my presence brings peace. I steward my home as holy ground.
+        </div>
+        
+        <div class="was-declaration-text">
+            In my community, I shine as a light <span class="was-scripture">(Matthew 5:14–16)</span>. I bring solutions, compassion, and hope. God uses me to uplift and transform lives. In every environment, workplace, ministry, leadership, or service; I represent God's Kingdom with excellence. I walk in wisdom <span class="was-scripture">(James 1:5)</span>, favour <span class="was-scripture">(Psalm 90:17)</span>, and the good works prepared for me <span class="was-scripture">(Ephesians 2:10)</span>.
+        </div>
+        
+        <div class="was-declaration-text">
+            Wherever God places me, I bring <span class="was-highlight">heaven's atmosphere</span>. I am fruitful, effective, and aligned with God's timing. I step forward in authority and grace, chosen to bear lasting fruit <span class="was-scripture">(John 15:16)</span>. I commit to growth through teaching, mentorship, and worship. God renews my mind and shapes my life <span class="was-scripture">(Romans 12:2)</span>, equipping me for every good work <span class="was-scripture">(2 Timothy 3:17)</span>. I am strengthened by community. As iron sharpens iron, I am sharpened by my sisters in Christ <span class="was-scripture">(Proverbs 27:17)</span>.
+        </div>
+        
+        <div class="was-prayer-ending">
+            I am rising into God's call for my life. Confident, courageous, and full of faith, I shine with His purpose and glory. Today, I arise; empowered, healed, and prepared to fulfil my divine assignment, in Jesus' name, Amen.
+        </div>
+        
+        <div class="was-signature">
+            <i class="fas fa-praying-hands"></i> WAS Network <i class="fas fa-praying-hands"></i>
+        </div>
     </div>
+
+    <script>
+        // Add subtle interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const declarationTexts = document.querySelectorAll('.was-declaration-text');
+            
+            declarationTexts.forEach(text => {
+                text.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-4px)';
+                    this.style.boxShadow = '0 12px 25px rgba(138, 43, 226, 0.15)';
+                });
+                
+                text.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 12px rgba(138, 43, 226, 0.08)';
+                });
+            });
+            
+            // Add click effect for scripture references
+            const scriptures = document.querySelectorAll('.was-scripture');
+            scriptures.forEach(scripture => {
+                scripture.addEventListener('click', function() {
+                    this.style.backgroundColor = 'rgba(138, 43, 226, 0.15)';
+                    this.style.transform = 'scale(1.05)';
+                    setTimeout(() => {
+                        this.style.transform = 'scale(1)';
+                        setTimeout(() => {
+                            this.style.backgroundColor = 'rgba(138, 43, 226, 0.08)';
+                        }, 300);
+                    }, 300);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
