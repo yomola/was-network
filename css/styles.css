@@ -482,6 +482,8 @@ footer {
 }
 
 .devotional-card:hover,
+.daily-declaration-card:hover,
+.daily-declaration-card:focus,
 .devotional-card:focus {
     transform: translateY(-10px);
     outline: none;
