@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAS Network Daily Declaration</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* WAS Network Daily Declaration - Complete Beautiful Design */
+        /* WAS Network Daily Declaration - Dark Purple Elegance */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -15,197 +15,323 @@
         }
         
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            background: linear-gradient(135deg, #1a0b2e 0%, #2d1b69 100%);
             min-height: 100vh;
-            padding: 20px;
-            font-family: 'Merriweather', 'Georgia', serif;
-            color: #2c3e50;
+            padding: 40px 20px;
+            font-family: 'Crimson Pro', 'Georgia', serif;
+            color: #ffffff;
             line-height: 1.8;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
         }
         
-        .was-container {
-            max-width: 900px;
+        .was-document {
+            max-width: 850px;
             width: 100%;
-            background: white;
-            border-radius: 24px;
-            padding: 50px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(145deg, #2d1b69 0%, #3a2480 100%);
+            border-radius: 12px;
+            padding: 70px 80px;
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.1),
+                inset 0 0 0 1px rgba(255, 255, 255, 0.05);
             position: relative;
             overflow: hidden;
         }
         
-        .was-container::before {
+        .was-document::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 6px;
-            background: linear-gradient(90deg, #8a2be2, #4a90e2, #20b2aa);
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b9d, #8a2be2, #4a90e2);
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
         }
         
-        .was-title {
+        .was-document::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(138, 43, 226, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(74, 144, 226, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255, 107, 157, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .was-header {
             text-align: center;
-            color: #5c4b8a;
-            font-size: 3.2rem;
-            margin-bottom: 40px;
-            font-weight: 700;
-            letter-spacing: 1px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
             position: relative;
-            padding-bottom: 25px;
         }
         
-        .was-title::after {
+        .was-header::after {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 120px;
-            height: 4px;
-            background: linear-gradient(90deg, #8a2be2, #4a90e2);
-            border-radius: 2px;
+            left: 25%;
+            right: 25%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffffff, transparent);
         }
         
-        .was-declaration-text {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            text-align: left;
-            padding: 25px;
-            background: linear-gradient(145deg, #f9f9ff 0%, #ffffff 100%);
-            border-radius: 16px;
-            border-left: 4px solid #8a2be2;
-            box-shadow: 0 4px 12px rgba(138, 43, 226, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .was-title {
+            color: #ffffff;
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, #e0d6ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
-        .was-declaration-text:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(138, 43, 226, 0.12);
+        .was-subtitle {
+            color: #d0c5ff;
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .was-content {
+            font-size: 1.35rem;
+            line-height: 1.9;
+            text-align: justify;
+            padding: 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .was-content p {
+            margin-bottom: 1.8em;
+            position: relative;
+        }
+        
+        .was-content p:first-of-type::first-letter {
+            initial-letter: 2;
+            font-size: 3.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ff6b9d, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-right: 15px;
+            float: left;
+            line-height: 1;
+            margin-top: 10px;
+            text-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
         }
         
         .was-scripture {
-            color: #8a2be2;
+            color: #ffd166;
             font-style: italic;
             font-weight: 600;
-            background: rgba(138, 43, 226, 0.08);
+            background: rgba(255, 209, 102, 0.15);
             padding: 2px 8px;
-            border-radius: 6px;
+            border-radius: 4px;
             margin: 0 3px;
-            border-left: 2px solid #8a2be2;
             display: inline-block;
+            font-size: 1.1rem;
+            border: 1px solid rgba(255, 209, 102, 0.3);
+            box-shadow: 0 2px 8px rgba(255, 209, 102, 0.1);
         }
         
         .was-highlight {
-            color: #4a90e2;
+            color: #6aeeff;
             font-weight: 700;
-            background: linear-gradient(120deg, rgba(74, 144, 226, 0.1) 0%, rgba(74, 144, 226, 0.05) 100%);
-            padding: 2px 6px;
-            border-radius: 4px;
+            text-shadow: 0 2px 8px rgba(106, 238, 255, 0.3);
+            position: relative;
             display: inline-block;
+            padding: 0 4px;
+        }
+        
+        .was-highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #6aeeff, transparent);
+            border-radius: 2px;
+            z-index: -1;
         }
         
         .was-prayer-ending {
             text-align: center;
             font-style: italic;
-            font-size: 1.4rem;
-            color: #2c3e50;
-            padding: 35px;
-            margin-top: 40px;
-            background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
-            border-radius: 20px;
+            font-size: 1.5rem;
+            color: #ffffff;
+            padding: 50px 60px;
+            margin: 60px 0 40px;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2) 0%, rgba(74, 144, 226, 0.2) 100%);
+            border-radius: 12px;
             position: relative;
-            border: 2px dashed rgba(138, 43, 226, 0.3);
+            font-weight: 600;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 
+                inset 0 0 40px rgba(138, 43, 226, 0.2),
+                0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .was-prayer-ending::before,
+        .was-prayer-ending::after {
+            content: "❝";
+            position: absolute;
+            font-size: 5rem;
+            color: #ffd166;
+            opacity: 0.5;
+            text-shadow: 0 0 20px rgba(255, 209, 102, 0.3);
         }
         
         .was-prayer-ending::before {
-            content: "❝";
-            position: absolute;
-            top: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 4rem;
-            color: #8a2be2;
-            opacity: 0.3;
+            top: 20px;
+            left: 30px;
+        }
+        
+        .was-prayer-ending::after {
+            bottom: 20px;
+            right: 30px;
+            transform: rotate(180deg);
         }
         
         .was-signature {
             text-align: center;
-            margin-top: 50px;
-            padding-top: 25px;
-            border-top: 2px solid #eee;
-            color: #666;
-            font-size: 1.1rem;
-            letter-spacing: 2px;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            color: #d0c5ff;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
             text-transform: uppercase;
+            font-weight: 600;
         }
         
-        .was-flourish {
+        .was-stars {
             position: absolute;
-            opacity: 0.03;
-            font-size: 15rem;
-            color: #8a2be2;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.1);
             z-index: 0;
+            pointer-events: none;
+            animation: twinkle 3s infinite alternate;
         }
         
-        .was-flourish.top-left {
-            top: -50px;
-            left: -50px;
-            transform: rotate(-15deg);
+        .was-stars:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; }
+        .was-stars:nth-child(2) { top: 25%; right: 15%; animation-delay: 0.5s; }
+        .was-stars:nth-child(3) { bottom: 30%; left: 20%; animation-delay: 1s; }
+        .was-stars:nth-child(4) { bottom: 20%; right: 10%; animation-delay: 1.5s; }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.1; transform: scale(0.8); }
+            100% { opacity: 0.3; transform: scale(1.2); }
         }
         
-        .was-flourish.bottom-right {
-            bottom: -50px;
-            right: -50px;
-            transform: rotate(15deg);
+        .was-corner {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .was-corner.tl {
+            top: 15px;
+            left: 15px;
+            border-right: none;
+            border-bottom: none;
+        }
+        
+        .was-corner.tr {
+            top: 15px;
+            right: 15px;
+            border-left: none;
+            border-bottom: none;
+        }
+        
+        .was-corner.bl {
+            bottom: 15px;
+            left: 15px;
+            border-right: none;
+            border-top: none;
+        }
+        
+        .was-corner.br {
+            bottom: 15px;
+            right: 15px;
+            border-left: none;
+            border-top: none;
         }
         
         /* Responsive Design */
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
+        @media (max-width: 992px) {
+            .was-document {
+                padding: 50px 40px;
             }
             
-            .was-container {
-                padding: 30px 20px;
-                border-radius: 20px;
+            .was-title {
+                font-size: 2.6rem;
+            }
+            
+            .was-content {
+                font-size: 1.25rem;
+            }
+            
+            .was-prayer-ending {
+                font-size: 1.4rem;
+                padding: 40px 50px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+            
+            .was-document {
+                padding: 40px 25px;
             }
             
             .was-title {
                 font-size: 2.2rem;
-                padding-bottom: 20px;
             }
             
-            .was-declaration-text {
-                font-size: 1.1rem;
-                padding: 20px;
+            .was-content {
+                font-size: 1.15rem;
+                padding: 15px;
+            }
+            
+            .was-content p:first-of-type::first-letter {
+                font-size: 3rem;
             }
             
             .was-prayer-ending {
-                font-size: 1.2rem;
-                padding: 25px 20px;
+                font-size: 1.3rem;
+                padding: 30px 35px;
+                margin: 40px 0 30px;
             }
             
-            .was-flourish {
-                font-size: 10rem;
-            }
-            
-            .was-flourish.top-left {
-                top: -30px;
-                left: -30px;
-            }
-            
-            .was-flourish.bottom-right {
-                bottom: -30px;
-                right: -30px;
+            .was-prayer-ending::before,
+            .was-prayer-ending::after {
+                font-size: 3.5rem;
             }
         }
         
         /* Animation for entrance */
-        @keyframes fadeInUp {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(30px);
@@ -216,87 +342,173 @@
             }
         }
         
-        .was-container {
-            animation: fadeInUp 0.8s ease-out;
+        .was-document {
+            animation: fadeIn 1s ease-out;
         }
         
-        .was-declaration-text {
-            animation: fadeInUp 0.6s ease-out backwards;
+        /* Hover effects for interactive elements */
+        .was-scripture:hover {
+            background: rgba(255, 209, 102, 0.25);
+            cursor: pointer;
+            transform: translateY(-2px);
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(255, 209, 102, 0.2);
         }
         
-        .was-declaration-text:nth-of-type(1) { animation-delay: 0.1s; }
-        .was-declaration-text:nth-of-type(2) { animation-delay: 0.2s; }
-        .was-declaration-text:nth-of-type(3) { animation-delay: 0.3s; }
-        .was-declaration-text:nth-of-type(4) { animation-delay: 0.4s; }
-        .was-declaration-text:nth-of-type(5) { animation-delay: 0.5s; }
-        .was-prayer-ending { animation-delay: 0.6s; }
+        .was-highlight:hover {
+            color: #ffffff;
+            text-shadow: 0 0 15px rgba(106, 238, 255, 0.5);
+            transition: all 0.2s ease;
+        }
+        
+        .was-highlight:hover::after {
+            background: linear-gradient(90deg, transparent, #ffffff, transparent);
+            height: 4px;
+            transition: all 0.2s ease;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(42, 21, 84, 0.5);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #8a2be2, #4a90e2);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #9a3bf2, #5aa0f2);
+        }
     </style>
 </head>
 <body>
-    <div class="was-container">
-        <div class="was-flourish top-left">✝</div>
-        <div class="was-flourish bottom-right">✝</div>
+    <div class="was-document">
+        <!-- Star decorations -->
+        <div class="was-stars">✦</div>
+        <div class="was-stars">✧</div>
+        <div class="was-stars">✦</div>
+        <div class="was-stars">✧</div>
         
-        <h1 class="was-title">WAS Network Daily Declaration</h1>
+        <!-- Corner decorations -->
+        <div class="was-corner tl"></div>
+        <div class="was-corner tr"></div>
+        <div class="was-corner bl"></div>
+        <div class="was-corner br"></div>
         
-        <div class="was-declaration-text">
-            Today, I declare that I am a woman created with <span class="was-highlight">divine intention</span> and <span class="was-highlight">heavenly purpose</span>. I arise and shine, for God's glory is upon me <span class="was-scripture">(Isaiah 60:1)</span>. I step boldly into the calling God has placed on my life, trusting His good and hope-filled plans <span class="was-scripture">(Jeremiah 29:11)</span>. I am equipped and empowered by His Spirit, who counsels, strengthens, and leads me into all truth <span class="was-scripture">(John 16:13)</span>. I walk in wisdom and clarity, reflecting His brilliance <span class="was-scripture">(Psalm 37:23)</span>.
+        <div class="was-header">
+            <h1 class="was-title">Daily Declaration</h1>
+            <div class="was-subtitle">WAS Network • A Proclamation of Purpose & Destiny</div>
         </div>
         
-        <div class="was-declaration-text">
-            Today, I embrace <span class="was-highlight">healing</span> in my spirit, soul, and mind. The Lord restores my soul <span class="was-scripture">(Psalm 23:3)</span> and binds every broken place <span class="was-scripture">(Psalm 147:3)</span>. I am whole and strengthened by His love.
-        </div>
-        
-        <div class="was-declaration-text">
-            I declare that I am a <span class="was-highlight">vessel of purpose</span> in my home, community, and every place God assigns to me. I am intentionally placed by Him, carrying His presence, wisdom, and grace <span class="was-scripture">(2 Corinthians 2:14)</span>. I am a messenger of His love and an instrument of His righteousness <span class="was-scripture">(Romans 6:13)</span>. In my home, my words carry life <span class="was-scripture">(Proverbs 18:21)</span>, my hands bring strength <span class="was-scripture">(Proverbs 31:17)</span>, and my presence brings peace. I steward my home as holy ground.
-        </div>
-        
-        <div class="was-declaration-text">
-            In my community, I shine as a light <span class="was-scripture">(Matthew 5:14–16)</span>. I bring solutions, compassion, and hope. God uses me to uplift and transform lives. In every environment, workplace, ministry, leadership, or service; I represent God's Kingdom with excellence. I walk in wisdom <span class="was-scripture">(James 1:5)</span>, favour <span class="was-scripture">(Psalm 90:17)</span>, and the good works prepared for me <span class="was-scripture">(Ephesians 2:10)</span>.
-        </div>
-        
-        <div class="was-declaration-text">
-            Wherever God places me, I bring <span class="was-highlight">heaven's atmosphere</span>. I am fruitful, effective, and aligned with God's timing. I step forward in authority and grace, chosen to bear lasting fruit <span class="was-scripture">(John 15:16)</span>. I commit to growth through teaching, mentorship, and worship. God renews my mind and shapes my life <span class="was-scripture">(Romans 12:2)</span>, equipping me for every good work <span class="was-scripture">(2 Timothy 3:17)</span>. I am strengthened by community. As iron sharpens iron, I am sharpened by my sisters in Christ <span class="was-scripture">(Proverbs 27:17)</span>.
-        </div>
-        
-        <div class="was-prayer-ending">
+        <div class="was-content">
+            <p>
+                Today, I declare that I am a woman created with <span class="was-highlight">divine intention</span> and <span class="was-highlight">heavenly purpose</span>. I arise and shine, for God's glory is upon me <span class="was-scripture">(Isaiah 60:1)</span>. I step boldly into the calling God has placed on my life, trusting His good and hope-filled plans <span class="was-scripture">(Jeremiah 29:11)</span>. I am equipped and empowered by His Spirit, who counsels, strengthens, and leads me into all truth <span class="was-scripture">(John 16:13)</span>. I walk in wisdom and clarity, reflecting His brilliance <span class="was-scripture">(Psalm 37:23)</span>.
+            </p>
+            
+            <p>
+                Today, I embrace <span class="was-highlight">healing</span> in my spirit, soul, and mind. The Lord restores my soul <span class="was-scripture">(Psalm 23:3)</span> and binds every broken place <span class="was-scripture">(Psalm 147:3)</span>. I am whole and strengthened by His love. I declare that I am a <span class="was-highlight">vessel of purpose</span> in my home, community, and every place God assigns to me. I am intentionally placed by Him, carrying His presence, wisdom, and grace <span class="was-scripture">(2 Corinthians 2:14)</span>. I am a messenger of His love and an instrument of His righteousness <span class="was-scripture">(Romans 6:13)</span>.
+            </p>
+            
+            <p>
+                In my home, my words carry life <span class="was-scripture">(Proverbs 18:21)</span>, my hands bring strength <span class="was-scripture">(Proverbs 31:17)</span>, and my presence brings peace. I steward my home as holy ground. In my community, I shine as a light <span class="was-scripture">(Matthew 5:14–16)</span>. I bring solutions, compassion, and hope. God uses me to uplift and transform lives. In every environment, workplace, ministry, leadership, or service; I represent God's Kingdom with excellence. I walk in wisdom <span class="was-scripture">(James 1:5)</span>, favour <span class="was-scripture">(Psalm 90:17)</span>, and the good works prepared for me <span class="was-scripture">(Ephesians 2:10)</span>.
+            </p>
+            
+            <p>
+                Wherever God places me, I bring <span class="was-highlight">heaven's atmosphere</span>. I am fruitful, effective, and aligned with God's timing. I step forward in authority and grace, chosen to bear lasting fruit <span class="was-scripture">(John 15:16)</span>. I commit to growth through teaching, mentorship, and worship. God renews my mind and shapes my life <span class="was-scripture">(Romans 12:2)</span>, equipping me for every good work <span class="was-scripture">(2 Timothy 3:17)</span>. I am strengthened by community. As iron sharpens iron, I am sharpened by my sisters in Christ <span class="was-scripture">(Proverbs 27:17)</span>.
+            </p>
+            <p>
             I am rising into God's call for my life. Confident, courageous, and full of faith, I shine with His purpose and glory. Today, I arise; empowered, healed, and prepared to fulfil my divine assignment, in Jesus' name, Amen.
+        </p>
+        
         </div>
         
         <div class="was-signature">
-            <i class="fas fa-praying-hands"></i> WAS Network <i class="fas fa-praying-hands"></i>
+            <i class="fas fa-star" style="margin-right: 15px; color: #ffd166;"></i>
+            WAS Network • Women Arise & Shine Network
+            <i class="fas fa-star" style="margin-left: 15px; color: #ffd166;"></i>
         </div>
     </div>
 
     <script>
         // Add subtle interactive effects
         document.addEventListener('DOMContentLoaded', function() {
-            const declarationTexts = document.querySelectorAll('.was-declaration-text');
+            const scriptures = document.querySelectorAll('.was-scripture');
+            const highlights = document.querySelectorAll('.was-highlight');
             
-            declarationTexts.forEach(text => {
-                text.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-4px)';
-                    this.style.boxShadow = '0 12px 25px rgba(138, 43, 226, 0.15)';
-                });
-                
-                text.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = '0 4px 12px rgba(138, 43, 226, 0.08)';
+            // Scripture reference click effect
+            scriptures.forEach(scripture => {
+                scripture.addEventListener('click', function() {
+                    const verse = this.textContent.replace(/[()]/g, '');
+                    const tooltip = document.createElement('div');
+                    tooltip.textContent = `📖 ${verse}`;
+                    tooltip.style.cssText = `
+                        position: fixed;
+                        background: rgba(26, 11, 46, 0.95);
+                        color: #ffd166;
+                        padding: 12px 18px;
+                        border-radius: 8px;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        z-index: 1000;
+                        pointer-events: none;
+                        transition: opacity 0.3s;
+                        box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+                        border: 1px solid rgba(255, 209, 102, 0.3);
+                        backdrop-filter: blur(10px);
+                        max-width: 300px;
+                        text-align: center;
+                    `;
+                    
+                    document.body.appendChild(tooltip);
+                    
+                    const rect = this.getBoundingClientRect();
+                    tooltip.style.left = (rect.left + rect.width/2 - 100) + 'px';
+                    tooltip.style.top = (rect.top - 50) + 'px';
+                    
+                    setTimeout(() => {
+                        tooltip.style.opacity = '0';
+                        setTimeout(() => {
+                            document.body.removeChild(tooltip);
+                        }, 300);
+                    }, 1500);
                 });
             });
             
-            // Add click effect for scripture references
-            const scriptures = document.querySelectorAll('.was-scripture');
-            scriptures.forEach(scripture => {
-                scripture.addEventListener('click', function() {
-                    this.style.backgroundColor = 'rgba(138, 43, 226, 0.15)';
-                    this.style.transform = 'scale(1.05)';
-                    setTimeout(() => {
-                        this.style.transform = 'scale(1)';
-                        setTimeout(() => {
-                            this.style.backgroundColor = 'rgba(138, 43, 226, 0.08)';
-                        }, 300);
-                    }, 300);
+            // Highlight hover effect with glow
+            highlights.forEach(highlight => {
+                highlight.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.transition = 'all 0.2s ease';
+                    this.style.textShadow = '0 0 20px rgba(106, 238, 255, 0.7)';
+                });
+                
+                highlight.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.textShadow = '0 2px 8px rgba(106, 238, 255, 0.3)';
+                });
+            });
+            
+            // Add pulsing effect to stars
+            const stars = document.querySelectorAll('.was-stars');
+            stars.forEach((star, index) => {
+                star.style.animation = `twinkle ${3 + index * 0.5}s infinite alternate`;
+            });
+            
+            // Add subtle glow effect to corners on hover
+            const corners = document.querySelectorAll('.was-corner');
+            corners.forEach(corner => {
+                corner.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.3)';
+                    this.style.transition = 'box-shadow 0.3s ease';
+                });
+                
+                corner.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = 'none';
                 });
             });
         });
